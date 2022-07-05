@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="/stylesheets/header.css">
+<link rel="stylesheet" href="/stylesheets/general.css">
+<header class="mainheader">
+    <div class="topheader-container-main">
+        <div class="topheader-container-left">
+            <div class="mainheader-logo">
+                <a href="/" title="Home">Cencop</a>
+            </div>
+            <div class="headersearch">
+                <form action="/products/search" method="get">
+                <input class="searchinput" type="text" name="q" placeholder="Buscar...">
+                <button class="searchbutton" type="submit"><i class="fa-search fas"></i></button>
+            </form>
+            </div>
+        </div>
+        <div class="topheader-container-right">
+            <div class="user-links">
+                <a href="/users/login">Login<i class="fas fa-sign-in-alt"></i></a>
+                <a href="/users/registro">Registrarse<i class="fas fa-user-circle"></i></a></span>
+                <a href="/users/perfil">Perfil<i class="fas fa-user"></i></a>            
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="bottomheader-container-main">
+        <div class="navbarmain">
+            <ul class="nav-links">
+                <li>
+                    <a href="/products">Ver productos</a>
+                </li>
+                <li>
+                    <a href="/products/create">Nuevo producto</a>
+                </li>
+                <li>
+                    <a href="/cart">Ver carrito</a>
+                </li>
+                <script>
+                    const navbar = document.querySelector(".navbarmain");
+                    const links = document.querySelectorAll(".nav-links li a");
+                    const path = window.location.pathname;
+                    links.forEach(link => {
+                        if(link.getAttribute("href") == path){
+                            link.classList.add("active");
+                        }});
+                        </script>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Menu Principal 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="/products">Ver productos</a>
+                    <a href="/products/create">Nuevo producto</a>
+                    <a href="/cart">Ver carrito</a>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Usuarios 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/users/login">Login <i class="fas fa-sign-in-alt"></i></a>
+                        <a href="/users/registro">Registrarse <i class="fas fa-user-circle"></i></a>
+                        <a href="/users/perfil">Perfil <i class="fas fa-user"></i></a>
+                    </div>
+                </div> 
+                
+        
+    </div>
+    
+</div>
+
+</header>

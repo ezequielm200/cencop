@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "m200_ezequiel",
+    "password": "DevM200!",
+    "database": "m200_cencop",
+    "host": "mysql-m200.alwaysdata.net",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "m200_ezequiel",
+    "password": "DevM200!",
+    "database": "m200_cencop",
+    "host": "mysql-m200.alwaysdata.net",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "m200_ezequiel",
+    "password": "DevM200!",
+    "database": "m200_cencop",
+    "host": "mysql-m200.alwaysdata.net",
+    "dialect": "mysql"
+  }
+}
